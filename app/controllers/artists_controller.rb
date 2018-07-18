@@ -8,6 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
+
     @artist = Artist.new
   end
 
@@ -47,6 +48,6 @@ class ArtistsController < ApplicationController
   private
 
   def artist_params
-    params.require(:artist).permit(:name, :song_id)
+    params.require(:artist).permit(:name)
   end
 end
